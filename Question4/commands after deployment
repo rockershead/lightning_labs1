@@ -1,0 +1,7 @@
+Now, upgrade the deployment's image version using the kubectl set image command:-
+
+kubectl set image deployment nginx-deploy nginx=nginx:1.17
+
+Run the kubectl rollout command to undo the update and go back to the previous version:-
+
+kubectl rollout undo deployment nginx-deploy

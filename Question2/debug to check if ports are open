@@ -1,0 +1,11 @@
+kubectl exec -it webapp-color -- /bin/sh
+/opt -- nc -v -z -w 5 secure-service 80
+nc: secure-service (172.20.172.225:80): Operation timed out
+/opt -- nc -v -z -w 5 172.20.172.225 80
+
+
+
+
+-v -- verbose mode
+-w -- Timeout — how long to wait before giving up (in seconds)
+-z -- Zero-I/O mode (used for scanning)
